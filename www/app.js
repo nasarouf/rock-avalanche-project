@@ -95,7 +95,7 @@
 
     $("#calc_button").click(function(){
       ajaxUri = "http://localhost:8888/?vol=" + $("#volume").val() + "&elevationDiff=" + $("#elevationDiff").val() + "&distance=" + $("#distance").val() + "&data=" + $("#data").val();
-
+      $("#debuginfo").val(ajaxUri);
       $.ajax({
         url: ajaxUri,
         data: {},
